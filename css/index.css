@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+a {text-decoration: none; color: inherit;}
+ul { list-style-type: none;}
+img {max-width: 100%; vertical-align: middle;}
+table { border-collapse: collapse; width: 100%;}
+.row {max-width: 960px; margin: 0 auto;}
+button {border: none; background: none; cursor: pointer; font-size: 100%;} 
+
+body { font-size:  16px; font-family: '나눔고딕'; line-height:1.5; color: #666;}
+
+#nav {background: #85665c; position: fixed; top: 0; left: 0; width: 100%; z-index: 99;}
+#nav .depth1 {overflow: hidden;}
+#nav .depth1 li {
+    float: left; width: 20%; border: 0px solid black; text-align: center; color: #fff;
+    border-bottom: solid 2px transparent; }
+
+#nav .depth1 li:hover { border-bottom: 2px solid #fff;}
+
+#nav .depth1 li a {display: block; padding: 20px 0;}
+
+#header {
+    background:url(../images/header_bg.gif) no-repeat center;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+    margin-top: 66px;
+}
+.header_text {
+    position: absolute;
+    top: 40%; left: 50%;
+    transform: translate(-50%, -50%);
+    color: #333;
+    text-align: center;
+}
+.header_text h1 p {font-size: 48px;font-family: '나눔명조'; padding: 20px 0;}
+.header_text > p {font-size: 22.4px; }
+/* section구역 */
+#section{
+    background: url(../images/bg.jpg) repeat; position: relative;
+}
+
+#section > div {padding: 48px 0;}
+#section  h2 { 
+    font-size: 48px; 
+    font-family: '나눔명조'; 
+    color: #85665c; 
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+#section > .article6 { padding: 0px;}
+/* .article1 {position: relative;} */
+.main_food { text-align: center; margin-top: -188px;}
+ /* left: 50%; transform: translate(-50%); top: -110px; */
+
+.article1 ul {display: table; width: 100%; color: #666; text-align: center; margin-top: 50px; }
+.article1 ul > li {
+    display: table-cell;
+    width: 25%;
+    padding: 0 15px;
+}
+/* .article1 ul > li+li {padding-left: 30px;} */
+.article1 h3 {font-size: 25.6px; color: #85665c; font-family: '나눔명조'; padding: 50px 0 15px; line-height: 1.2;}
+
+.article1 ul > li img { height: 97px;}
+
+.article2 {text-align: center;}
+
+.article2 ul li {
+    float: left; width: 25%; padding:30px 20px;
+}
+/* 블록성격의 자식들을 한줄로 정렬하기 위해 float 속성을 사용하면 부모의 높이가 사라지는 부작용 발생.
+이것을 해결하기 위해 부모요소에 overflow:hidden 속성을 줌 */
+
+.article3 {text-align: center;}
+
+.article3 > p:nth-of-type(2) {color: #666;}
+.article3 > p:nth-of-type(3){font-size: 28.8px; font-family: '나눔명조'; color: #404040; padding: 20px 0;
+font-weight: normal;}
+/* 폰트명이 한글이거나 영문단어 두 단어 이상일때는 따움표로 감쌈 */
+.article3 > p:nth-of-type(4) {color: #85665c;}
+
+.article3 > img {padding: 60px 0 20px;}
+
+
+/* .article4 strong {font-size: 25.6px; color: #85665c;}
+.table1 > td:last-child {font-size: 22.4px; font-weight: bold; color: #404040; text-align: right;}
+.article4 .button a {display: inline-block; color:#fff; background:#85665c; border-radius:50px;
+    width:175.2px; height:64px;}
+.article4 .button {text-align: center; line-height: 60px; margin-top: 80px;} */
+
+.article4 table { color: #404040; margin-top: 20px;}
+.article4 td {border-bottom: 1px solid #85665c; padding: 15px 0; }
+.article4 td:nth-child(2) {text-align: right; font-size: 22.4px;}
+.article4 td:nth-child(1) strong{font-size: 25.6px; color: #85665c; font-weight: normal;}
+.article4 tr:last-child td {border-bottom: none;}
+
+.article4 .btn{text-align: center; margin-top: 50px; }
+/* .article4 .btn button {
+    width: 175.2px; height: 64px; border-radius: 50px; background: #85665c; color: #fff;} */
+.article4 .btn a {
+    width: 175.2px; height: 64px; border-radius: 50px; background: #85665c; color: #fff;
+    display: inline-block; line-height: 64px;}
+
+#detail {
+    position: fixed; top: 0; left: 0; bottom: 0; right: 0;
+    background: rgba(0, 0, 0, 0.5); z-index: 999; display: none;}
+
+#detail:target {display: block;}
+
+.detailcont {
+    position: absolute ; background: #fff; color: black; width: 400px; padding: 20px;
+    top: 50%; left: 50%; transform: translate(-50%, -50%);}
+
+.detailcont .close {
+    display: block; width: 80px; background: red; color: #fff; padding: 10px 0; text-align: center;
+    border-radius: 10px; margin: 20px auto 0; }
+
+.article5{overflow:hidden;}
+.article5 .info {float: left; widows: 50%; margin-top: 20px;}
+.article5 .info pre {font-family: inherit;}
+.article5 .map{ float: right; width:50%;margin-top: 20px;} 
+
+
+.article6 {
+    background: #85665c; color: #f4ba8e; font-size: 32px; font-family: '나눔명조';
+    text-align: center;}
+.article6 img {width: 100%;}
+.article6 a {color: #fff;}
+.article6 div {padding: 15px 0;}
+
+#footer { background: #85665c; font-size: 16px; font-family: '나눔명조'; color: #fff; text-align: center;
+    padding: 61px 0;}
+
+.gotop{
+    position: fixed; right: 50px; bottom: 50px; width: 100px; height: 100px; border-radius: 50%; 
+    background: black;color: #fff; text-align: center; line-height: 100px;
+}
